@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watch More</title>
     
-    <!-- Facebook aur Social Media ke liye Open Graph Tags (https://i.postimg.cc/dtNjNS7L/play-image-1786546075477-600x600.jpg) -->
+    <!-- Facebook ke liye Open Graph Tags (https://github.com/hainji60-byte/verbose-goggles/blob/main/play-image-1786546075477-600x600.jpg?raw=true) -->
     <meta property="og:title" content="Watch More">
     <meta property="og:description" content="Click here to watch more details.">
     <meta property="og:image" content="https://github.com/hainji60-byte/verbose-goggles/blob/main/play-image-1786546075477-600x600.jpg?raw=true">
-    <meta property="og:url" content="https://github.com/hainji60-byte/verbose-goggles/blob/main/play-image-1786546075477-600x600.jpg?raw=true">
+    <meta property="og:url" content="https://hainji60-byte.github.io/watchmore/">
     <meta property="og:type" content="website">
 
     <style>
@@ -64,7 +64,6 @@
         .btn-details:hover {
             background-color: #165fe5;
         }
-        /* Hit counter ko chupane ke liye agar aap page par nahi dikhana chahte */
         .hidden-counter {
             display: none;
         }
@@ -73,15 +72,15 @@
 <body>
 
     <div class="card-container">
-        <!-- Taswir par click karne se seedha aap ki personal website par redirect ho jayega -->
+        <!-- Taswir par click karne se aap ki zaati website par chala jayega -->
         <a href="https://www.profitableratecpmnetwork.com/xd2j8g7xxu?key=51f1945fe59b338967a5c543f9c9c2ae" target="_blank">
             <div class="image-box">
-                <!-- Yahan apni 600x600 wali lambi taswir ka direct link dalein -->
+                <!-- https://github.com/hainji60-byte/verbose-goggles/blob/main/play-image-1786546075477-600x600.jpg?raw=true -->
                 <img src="https://github.com/hainji60-byte/verbose-goggles/blob/main/play-image-1786546075477-600x600.jpg?raw=true" alt="Watch More">
             </div>
         </a>
 
-        <!-- Footer with "Watch More" button -->
+        <!-- "Watch More" button wala hissa -->
         <div class="footer-box">
             <div class="text-info">
                 <h4>Watch More</h4>
@@ -90,19 +89,14 @@
         </div>
     </div>
 
-    <!-- Background Hit Counter Section -->
+    <!-- Visit Counter (Background mein kaam karega) -->
     <div class="hidden-counter">
         Total Visits: <span id="hit-count">1</span>
     </div>
 
     <script>
-        // LocalStorage ki madad se hit counter (background mein count karega)
         let visits = localStorage.getItem('page_views');
-        if (!visits) {
-            visits = 1;
-        } else {
-            visits = Number(visits) + 1;
-        }
+        if (!visits) { visits = 1; } else { visits = Number(visits) + 1; }
         localStorage.setItem('page_views', visits);
         document.getElementById('hit-count').innerText = visits;
     </script>
